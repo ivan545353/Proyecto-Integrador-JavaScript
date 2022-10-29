@@ -3,6 +3,9 @@
     font-family: Calibri;
     text-decoration: none;
   }
+  html{
+    scroll-behavior: smooth;
+  }
   body{
     margin-top: 80px;
   }
@@ -717,8 +720,6 @@ textarea::placeholder{
 form{
   width: 75vw;
 }
-
-
  /*-----------------Footer Responsive----------------*/
 #footer{
   width: 100%;
