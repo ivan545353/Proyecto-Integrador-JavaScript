@@ -1,0 +1,731 @@
+* {
+    box-sizing: border-box;
+    font-family: Calibri;
+    text-decoration: none;
+  }
+  body{
+    margin-top: 80px;
+  }
+  .header {
+    background-color: #353a40;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 999;
+  }
+  button{
+    cursor: pointer;
+  }
+  
+  /* --------------------Estilos menu de navegación---------------------- */
+  .nav {
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+    background-color: #353a40;
+  }
+
+  #conferencia {
+    color: white;
+  }
+
+  #comprar-ticket {
+    color: green;
+  }
+  
+  .nav-link {
+    color: #8b9497;
+    text-decoration: none;
+  }
+  
+  .nav-menu {
+    display: flex;
+    list-style: none;
+    margin: 15px;
+    background-color: #353a40;
+  }
+  
+  .nav-menu-item {
+    font-size: 16px;
+    margin: 0px;
+    line-height: 3em;
+    width: max-content;
+  }
+  
+  .nav-menu-link {
+    padding: 33px 30px;
+    border-radius: 8px;
+  }
+  
+  .nav-menu-link:hover {
+    background-color: #292828;
+    color: cyan;
+    transition: 0.5s;
+  }
+  #conferencia:hover {
+    color: cyan;
+  }
+  #comprar-ticket:hover {
+    color: cyan;
+  }
+  .logo {
+    height: 4em;
+  }
+  
+  .brand-name-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+    margin-left: 0px;
+  }
+  
+  .brand-name {
+    color: white;
+    font-size: 19px;
+  }
+  
+  .nav-toggle {
+    color: white;
+    background: none;
+    border: none;
+    font-size: 2em;
+    padding: 0 20px;
+    line-height: 60px;
+    display: none;
+    cursor: pointer;
+  }
+ 
+  
+ 
+  /*-----------------Estilos section1--------------------*/
+
+.background{
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  background-image: url(../images/ba1.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: 5s;
+  animation-name:animate;
+  animation-direction: alternate-reverse;
+  animation-play-state: running;
+  animation-timing-function: ease-in-out;
+  animation-duration: 20s;
+  animation-fill-mode: forwards;
+  animation-iteration-count: infinite;
+}
+
+@keyframes animate{
+  50%{
+    background-image: url(../images/ba2.jpg);
+  }
+  100%{
+    background-image: url(../images/ba3.jpg);
+  }
+}
+
+  .section1 img{
+    filter:brightness(50%)
+  }
+
+ .container1{
+    position: absolute;
+    top: 43%;
+    right: 10%;
+    z-index: 3;
+    max-width: 26vw;
+  }
+
+.container1 p{
+  color: white;
+  text-align: right;
+  margin-top: 1rem;
+  transition: all 0.3s ease 0s;
+}
+
+.container1 h1{
+  color: white;
+  text-align: right;
+  margin-bottom: 0px;
+  transition: all 0.3s ease 0s;
+}
+
+.container1 .container-button{
+  display: flex;
+  justify-content: right;
+}
+
+.button{
+  margin-left: 0.5rem;
+}
+.button-text{
+  text-decoration: none;
+  color: white;
+}
+#button-1{
+  background: none;
+  border-color: white;
+  border-radius: 5px;
+  border-width: 1px;
+  padding: 5px;
+  box-shadow: 0px 8px 15px;
+  transition: all 0.3s ease 0s;
+}
+#button-1:hover{
+  background-color: black;
+  transform: translateY(-7px);
+}
+
+#button-2{
+  background-color:#1b6e2d;
+  border: none;
+  border-radius: 5px;
+  padding: 5px;
+  box-shadow: 0px 8px 15px;
+  transition: all 0.3s ease 0s;
+}
+
+#button-2:hover{
+  transform: translateY(-7px);
+  background-color: purple;
+}
+
+
+ /*-----------------Estilos section2--------------------*/
+
+ .cards{
+  display: grid;
+  grid-template-columns: 20vw 20vw 20vw ;
+  justify-content: center;
+  column-gap: 20px;
+}
+
+.card{
+  justify-self:center;
+  background: rgb(255, 255, 255);
+  border-radius: 0.4em;
+  box-shadow: 0.3em 0.3em 0.7em #00000015;
+  transition: border 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  border: rgb(250, 250, 250) 0.2em solid;
+}
+
+.card:hover{
+  border: #006fff 0.2em solid;
+}
+
+
+.topic1 button, .topic2 button, .topic3 button, .topic4 button{
+  border: none;
+  border-radius: 5px;
+}
+
+.topic1 button a{
+  color: black;
+}
+
+.topic2 button a, .topic3 button a, .topic4 button a {
+  color: white;
+}
+.topic button{
+  font-size: 13px;
+}
+.topic button:hover{
+  background-color: green;
+  transition-duration: .5s;
+  border: solid;
+  border-width: .5px;
+}
+.topic1 button{
+  background-color: #FFC107;
+}
+
+.topic2 button{
+  background-color:#17A2B7;
+}
+
+.img-card{
+  width: 100%;
+  height: 350px;
+}
+
+.topic3 button{
+  background-color: #6c757e;
+}
+
+.topic4 button{
+  background-color: #dc3546;
+}
+
+.details p{
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.details h3{
+  margin-top: 0px;
+}
+
+.h3{
+  text-align: center;
+  font-weight: normal;
+  margin-bottom: 5px;
+}
+
+.h1{
+  text-align: center;
+  margin: 0px;
+}
+/*-----------------Estilos section3--------------------*/
+.section3{
+  margin-top: 50px;
+}
+
+.grid-container{
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.img-gridcontainer-item{
+  width: 100%;
+  height: 100%;
+}
+
+.gridcontainer-item2{
+  background-color: #353A40;
+}
+
+.button-section3{
+  background: none;
+  border:solid;
+  border-color: white;
+  border-width: 1px;
+  border-radius: 4px;
+  padding: 5px;
+  margin-left: 15px;
+}
+
+.button-section3:hover{
+  background-color: green;
+  border-width: 2px;
+  transition-duration: .3s;
+}
+
+.button-text-section3{
+  color: white;
+}
+
+.description{
+  margin: 15px;
+  color: white;
+  line-height: 1.5em;
+}
+
+.description h1{
+  margin-bottom:10px;
+}
+
+.description p{
+  font-size: 18px;
+}
+/*-----------------Estilos section4--------------------*/
+#subrayado-punteado{
+  border-bottom:2px dotted black;
+
+}
+
+.tittle-form{
+  text-align: center;
+  margin: 10px;
+}
+
+.form-advice{
+  color: gray;
+  font-size:.8em;
+}
+
+.form-container{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form{
+  width: 50vw;
+}
+
+
+textarea{
+  width: 100%;
+}
+
+#name,#surname, textarea{
+  border: 1px solid gray;
+  border-radius: 5px;
+  outline: 0;
+  width: 100%;
+}
+
+textarea::placeholder{
+  font-size: 22px;
+}
+
+.submit-button{
+  cursor: pointer;
+  border: none;
+  background-color: #96C93E;
+  width: 100%;
+  height: 2em;
+  border-radius: 6px;
+  margin-top: 10px;
+}
+
+.submit-button-text{
+  color: white;
+}
+
+.submit-button:hover{
+  border:1px dotted black;
+  background-color: green;
+  transition-duration: .3s;
+}
+
+.submit-button:active{
+  background-color: greenyellow;
+  
+}
+
+.row{ 
+  display: flex;
+  align-items: center;
+  justify-content:space-between;
+  margin-bottom: 10px;
+}
+
+.row .input-group1{
+  flex-basis: 48%;
+}
+.section4{
+  height: 50vh;
+  padding-bottom: 500px;
+}
+
+.section4 h3{
+  margin-top: 70px;
+}
+/* --------------------Estilos footer---------------------- */
+
+.footer{
+  position: relative;
+  bottom: 0;
+}
+#footer{
+  width: 100%;
+  background-color: #1D3947;
+}
+
+.footer-items ol{
+  width: 100%;
+  list-style: none;
+  padding: 2em;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap:4em;
+}
+.footer-items ol li{
+  margin: 0;
+  text-align: center;
+  transition: .5s;
+}
+.footer-items ol li a{
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
+
+  border-radius: 10px;
+ 
+}
+.footer-items ol li:hover{
+  transform: translate(0px, -10px);
+}
+
+/*-------------------tickets.html styles--------------------*/
+
+.membership-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap:wrap;
+  margin-top: 10vh;
+}
+.membership{
+  text-align: center;;
+  flex-basis: auto;
+  border:solid;
+  border-width: 2px;
+  margin:2em .3em .5em .3em;
+  width: 200px;
+}
+.membership-border-student{
+  border-color: #0B81FF;
+}
+.membership-border-trainee{
+  border-color: #49B1C2;
+}
+.membership-border-junior{
+  border-color: #FFD045;
+}
+.membership h1{
+  font-size: 1.5em;
+}
+.membership-info{
+  margin-bottom: 1.5em;
+}
+.membership-discount{
+  margin-bottom: 1.5em;
+  font-weight: bold;
+}
+.membership-documentation{
+  margin-bottom: 1.5em;
+  color: grey;
+}
+.h1-ticket{
+  margin-bottom: 1em;
+}
+.form-section{
+  margin-bottom: 10vh;
+}
+
+.row-dual{
+  width: 49%;
+}
+.input-dual{
+  width: 100%;
+  height: 3em;
+}
+.input-dual::placeholder{
+  font-size: 18px;
+}
+.submit-button-ticket{
+  cursor: pointer;
+  border: none;
+  background-color: #96C93E;
+  width: 49%;
+  height: 2.5em;
+  border-radius: 6px;
+  font-size: 18px;
+}
+.submit-button-text-ticket{
+  color: white;
+}
+.submit-button-ticket:hover{
+  border:1px dotted black;
+  background-color: green;
+  transition-duration: .3s;
+}
+
+.submit-button-ticket:active{
+  background-color: greenyellow;
+  
+}
+.quantity-input-container{
+  width: 49%;
+  height: 3em;
+}
+#quantity-input{
+  width: 100%;
+  height: 100%;
+}
+#select-ticket{
+  width: 49%;
+  height: 3em;
+}
+.email-input{
+  width: 100%;
+  margin-bottom: 1em;
+  height: 3em;
+  font-size: 18px;
+}
+.total{
+  background-color: #CCE5FF;
+  height: 3em;
+  border-radius: 5px;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  display: flex;
+}
+.total-text{
+  color: blue;
+  margin-left: 10px;
+  font-size: 18px;
+  align-self: center;
+}
+.legend{
+  font-size: 18px;
+  width: 49%;
+}
+/*-------------------Diseño Responsive-------------------------*/
+@media (max-width: 992px) {
+  .header {
+    background-color: #353a40;
+    height: 60px;
+
+  }
+ /*-----------------diseño responsive Menu de navegacion----------------*/
+  .nav-menu {
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    margin-left: 0px;
+    background-color: #353a40;
+    backdrop-filter: blur(8px);
+    position: fixed;
+    left: 0px;
+    top: 65px;
+    width: 100%;
+    padding: 20px 0;
+
+    height: calc(100% - 60px);
+    overflow-y: auto;
+
+    left: 100%;
+    transition: left 0.3s;
+  }
+
+  .nav-menu-item {
+      border-bottom: solid;
+      width: 100vw;
+      line-height: 3em;
+      padding: 0 2em;
+  }
+
+  .nav-link {
+    color: white;
+  }
+
+  .nav-menu-link {
+    width: 100%;
+    display: flex;
+    border-radius: 10px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
+  .nav-menu-link:hover {
+    background: none;
+    color: cyan;
+  }
+  .nav-menu-link_active:active {
+    background-color: #292828;
+    transition-duration: 10ms;
+  }
+
+  .nav-toggle {
+    display: block;
+  }
+
+  .nav-menu_visible {
+    left: 0;
+  }
+
+  .logo {
+    height: 4em;
+  }
+
+  .brand-name-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+    text-decoration: none;
+    margin: 0px;
+  }
+
+  .brand-name {
+    color: white;
+    font-size: 16px;
+  }
+
+  /*-------------------Section 1 Responsive-------------------------*/
+
+  .container1{
+    top: 25vh;
+    right: 13vw;
+    max-width: 75%;
+  }
+
+  .container1 p{
+    text-align: justify;
+  }
+  
+  .container1 h1{
+    text-align: center;
+
+  }
+
+  .container1 .container-button{
+    justify-content: center;
+  }
+
+   /*-----------------Section 2 responsive----------------*/
+   .cards{
+    display: grid;
+    grid-template-columns: 300px ;
+    justify-content: center;
+  }
+  
+  .card{
+    width: 300px;
+  }
+
+  .img-card{
+    height: 300px;
+  }
+
+  .topic button{
+    font-size: 15px;
+  }
+
+  /*-----------------Section 3 responsive----------------*/
+  .grid-container{
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows:50vh 50vh;
+    justify-content: center;
+  }
+  
+  .description{
+    text-align: justify;
+  }
+
+  .description p{
+    font-size: 16px;
+  }
+ /*-----------------Section 4 responsive----------------*/
+.tittle-form{
+  line-height: 1.5;
+}
+
+form{
+  width: 75vw;
+}
+
+
+ /*-----------------Footer Responsive----------------*/
+#footer{
+  width: 100%;
+  background-color: #1D3947;
+}
+
+.footer-items ol{
+  flex-direction: column;
+  gap:1.5em;
+}

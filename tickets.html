@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./styles/normalize.css">
+    <link rel="stylesheet" href="./styles/styles.css">
+    <script src="https://kit.fontawesome.com/2ee4d729e3.js" crossorigin="anonymous"></script>
+    <script defer src="./scripts/tickets.js"></script>
+    <title>Comprar Tickets</title>
+</head>
+<body>
+    <header class="header">
+        <!--Menu de navegacion-->
+        <nav class="nav">
+            <a href="./index.html" class="brand-name-container"><img src="./images/codoacodo.png" alt="Logo-codoacodo" class="logo"><span class="brand-name">Conf Bs As</span></a>
+            <button aria-label="Abrir menu" class="nav-toggle"><i class="fa-solid fa-bars"></i></button>
+            <ul class="nav-menu ">
+                <li class="nav-menu-item">
+                    <a href="./index.html" class="nav-menu-link nav-link nav-menu-link_active" id="conferencia">La conferencia</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./index.html" class="nav-menu-link nav-link nav-menu-link_active">Los oradores</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./index.html" class="nav-menu-link nav-link nav-menu-link_active">El lugar y la fecha</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="./index.html" class="nav-menu-link nav-link nav-menu-link_active">Conviertete en orador</a>
+                </li>
+                <li class="nav-menu-item">
+                    <a href="#" class="nav-menu-link nav-link nav-menu-link_active" id="comprar-ticket">Comprar tickets</a>
+                </li>
+             </ul>
+        </nav>
+    </header>   
+    <main> 
+        <div class="membership-container ">
+            <div class="membership membership-border-student">
+                <h1>Estudiante</h1>
+                <div class="membership-info">Tienen un descuento</div>
+                <div class="membership-discount">80%</div>
+                <div class="membership-documentation">*presentar documentación</div>
+            </div>
+            <div class="membership membership-border-trainee">
+                <h1>Trainee</h1>
+                <div class="membership-info">Tienen un descuento</div>
+                <div class="membership-discount">50%</div> 
+                <div class="membership-documentation">*presentar documentación</div>
+            </div>
+            <div class="membership membership-border-junior">
+                <h1>Junior</h1>
+                <div class="membership-info">Tienen un descuento</div>
+                <div class="membership-discount">15%</div>
+                <div class="membership-documentation">*presentar documentación</div>
+            </div>
+        </div>
+        
+        <section class="form-section">
+            <div>
+                <h3 class="h3">VENTA</h3>
+                <h1 class="h1 h1-ticket">VALOR DE TICKET $200</h1>
+            </div>
+            <div class="form-container">
+                <form id="formulario">
+                    <div class="row">
+                        <div class="row-dual">
+                            <input type="text" name="name" class="input-dual"  size=" " maxlength="35" required=" " placeholder="Nombre">
+                        </div>
+                        <div class="row-dual">
+                            <input type="text" name="surname" class="input-dual" size=" " maxlength="35" required=" " placeholder="Apellido">
+                        </div>
+                    </div>
+
+                        <input type="email" class="email-input"  name="mail" maxlength="50" required=" " placeholder="Correo"></input>
+                    
+                    <div class="row">
+                        <span class="legend">cantidad</span>
+                        <span class="legend">categoria</span>
+                    </div>
+                    <div class="row">
+                            <div class="quantity-input-container">
+                                <input type="number" name="quantity" id="quantity-input" size=" " maxlength="3" required=" " placeholder="Cantidad">
+                            </div>
+                                <select name="Membresia" id="select-ticket">
+                                    <option selected="true" disabled="disabled">Seleccione su categoría</option>
+                                    <option value="estudiante" >Estudiante</option>
+                                    <option value="trainee" >Trainee</option>
+                                    <option value="junior">Junior</option>
+                                </select>
+                    </div>
+                    <div class="total">
+                        <p class="total-text">Total a pagar: <span id="total-to-pay"></span> $</p>
+                    </div>
+                    <div class="row">
+                        <button type="reset" class="submit-button-ticket"><span class="submit-button-text-ticket">Borrar</span></button>
+                        <button type="submit" price-calc" class="submit-button-ticket" ><span class="submit-button-text-ticket">Resumen</span></button>
+                    </div>
+                </form>
+            </div>
+        </section>
+     
+        <!--Pie de página-->
+        <div id="footer" class="footer">
+            <div class="footer-items">
+                <ol>
+                    <li><a href="">Preguntas frecuentes</a></li>
+                    <li><a href="">Contactanos</a></li>
+                    <li><a href="">Prensa</a></li>
+                    <li><a href="">Conferencias</a></li>
+                    <li><a href="">Terminos y condiciones</a></li>
+                    <li><a href="">Privacidad</a></li>
+                    <li><a href="">Estudiantes</a></li>
+                </ol>
+            </div>
+        </div>
+    </main>
+    
+</body>
+</html>
